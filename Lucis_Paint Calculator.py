@@ -1,6 +1,6 @@
 #Author: Katlyn Lucis     11/21/2025
 #CIT-115-D02 Python Programming
-#Paint Jon Calculator
+#Paint Job Calculator
 
 #Begin by importing the math module as it will be needed later to use the ceiling function.
 import math

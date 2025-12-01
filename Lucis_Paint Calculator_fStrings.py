@@ -115,10 +115,10 @@ def showCostEstimate (iGallons,fLaborHours,fPaintCost,fLaborCost,fSalesTax):
     fCostEstimate = fPaintCost+fLaborCost+fSalesTax
     print("Gallons of paint: ", (iGallons))
     print("Hours of Labor: ", (fLaborHours))
-    print("Paint charges: $"+ format(fPaintCost, '.2f'))
-    print("Labor charges: $"+ format(fLaborCost, '.2f'))
-    print("Tax: $" + format(fSalesTax, '.2f'))
-    print("Total Cost: $"+ format(fCostEstimate,'.2f'))
+    print("Paint charges: $"+ format(fPaintCost, ',.2f'))
+    print("Labor charges: $"+ format(fLaborCost, ',.2f'))
+    print("Tax: $" + format(fSalesTax, ',.2f'))
+    print("Total Cost: $"+ format(fCostEstimate,',.2f'))
     return fCostEstimate
 
 
@@ -131,10 +131,10 @@ def writeOutput (sName,iGallons,fLaborHours,fPaintCost,fLaborCost,fSalesTax,fTot
     Job_File = open(f'{sName}_PaintJobOutput.txt', 'w')
     Job_File.write(f'Gallons of paint: {iGallons}\n')
     Job_File.write(f'Hours of Labor: {fLaborHours}\n')
-    Job_File.write(f'Paint charges: ${fPaintCost:.2f}\n')
-    Job_File.write(f'Labor charges: ${fLaborCost:.2f}\n')
-    Job_File.write(f'Tax: ${fSalesTax:.2f}\n')
-    Job_File.write(f'Total Cost: ${fTotalCost:.2f}\n')
+    Job_File.write(f'Paint charges: ${fPaintCost:,.2f}\n')
+    Job_File.write(f'Labor charges: ${fLaborCost:,.2f}\n')
+    Job_File.write(f'Tax: ${fSalesTax:,.2f}\n')
+    Job_File.write(f'Total Cost: ${fTotalCost:,.2f}\n')
     Job_File.close()
     print(f'File: {sName}_PaintJobOutput.txt was created.') 
 
